@@ -11,7 +11,7 @@ Please download the Azure Storage Explorer and ADLCopy tools from the links abov
 
 ## Azure Data Lake Analytics
 
-**Dataset used: datasets/simpsons_text_analysis.csv**
+### Exercise 1: Sample Scripts
 
 Lets get started by creating an Azure Data Lake Analytics account
 
@@ -88,6 +88,51 @@ There are 3 more queries to explore:
 Go ahead and run/explore the queries that show you how to create database tables in u-sql in your data lake store, populate the .TSV file data into the database table and query that table to show data in there.
 
 Feel free to [tweak queries and explore the U-SQL language further](https://docs.microsoft.com/en-us/azure/data-lake-analytics/data-lake-analytics-u-sql-get-started).
+
+
+### Exercise 2: Simpsons Data
+
+**Dataset used: datasets/simpsons_text_analysis.csv**
+
+For the next exercise we are going to use an open data set available here:
+to work with data relating to the Simpsons Script Lines - data is available in this github repo [datasets/simpsons_script_lines.csv](datasets/simpsons_script_lines.csv)
+
+download this github repo by choosing **'Clone or download' -> 'Download ZIP'**. This should not take long to download.
+
+ ![ADLA Portal](images/download.JPG)
+
+ Once downloaded, save in an accessible place on your device and then extract the files from the .zip folder. In the datasets folder you should see the file *simpsons_script_lines.csv*
+
+ Now go to the azure portal main page (click the top left corner 'Microsoft Azure' image). Type into the search bar next to the notifications symbol the name of your data lake store account
+
+ ![ADLA Portal](images/findstore.JPG)
+
+ Once your Data Lake Store is open, explore the data contained using the **'Data Explorer'**
+
+![ADLA Portal](images/choosedataexplorer.JPG)
+
+Create a new folder in your store called **'SimpsonsData'**
+
+![ADLA Portal](images/newfolder.JPG)
+
+Open the SimpsonsData folder and upload the local *simpsons_script_lines.csv* file
+
+![ADLA Portal](images/upload.JPG)
+![ADLA Portal](images/uploading.JPG)
+
+Once the upload is complete (this will take a couple of minutes) click on the file and view the contents of the dataset.
+
+![ADLA Portal](images/simpsonsdata.JPG)
+
+
+
+
+
+
+
+
+
+
 
 
 ## Azure Machine Learning
