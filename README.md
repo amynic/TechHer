@@ -182,6 +182,19 @@ and select **'Submit Job'**
 
 Once the job is completed review the U-SQL query code and then explore the output file. You should see the characters in the Simpsons who have spoken more than 10,000 lines - **are they who you expect?**
 
+Lets tweak this query slightly. On the job details blade choose **'Duplicate Script'**
+
+![ADLA Portal](images/duplicatescript.JPG)
+
+Make edits to the new query so that:
+* The job name is 'Simpsons 2'
+* The output file is 'top_speakers_2000.csv'
+* The WHERE count calculation is >= 2000
+
+![ADLA Portal](images/editscript.JPG)
+
+and submit the job. Once complete explore the output results file to see which characters speak more than 2000 lines in the dataset - **are they who you expect?**
+
 
 
 
