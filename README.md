@@ -264,14 +264,63 @@ and select **'Submit Job'**
 This query will take slightly longer to run than the previous queries
 ![ADLA Portal](images/textanalytics.JPG)
 
+Once completed view the output file to see that each row in the data now has a sentiment tag (positive/negative/neutral) and a confidence value associated to the assignment
 
+![ADLA Portal](images/textoutput.JPG)
 
+In this output view, its quite hard to summarise the dataset - so lets do that ...
 
+Close all the blades and **create a new job**
 
+Call is **'Text Analytics Summary'**
 
+and add/review the code below:
 
+```
+//Declare input/output destinations as variables - NOTE the change of input file
+DECLARE @in  string = "/SimpsonsData/simpsons_text_analysis.csv";
+DECLARE @out string = "/SimpsonsData/simpsons_text_analysis_summary.csv";
 
+//Extract data to query from CSV file
+@result =
+    EXTRACT id  int,
+            episode_id  int,
+            raw_character_text  string,
+            raw_location_text   string,
+            spoken_words    string,
+            Text    string,
+            Sentiment string,
+            Conf double
+    FROM @in
+    USING Extractors.Csv();
 
+// Count the occurence of each sentiment throughout the dataset
+@summary = 
+    SELECT
+        Sentiment,
+        COUNT(DISTINCT(id)) AS count
+    FROM @result
+    GROUP BY Sentiment;
+
+// Output the aggregated data to a results file
+OUTPUT @summary
+    TO @out
+    USING Outputters.Csv();
+
+```
+and select **'Submit Job'**
+
+![ADLA Portal](images/textsummaryjob.JPG)
+
+Review the output of the query:
+
+![ADLA Portal](images/outputfile.JPG)
+
+## Review
+
+In this part of the lab you have walked through sample scripts and learnt about the Azure Portal for submitting and reviewing scripts, used our own data to query and added cognitive capabilities.
+
+For further information on Azure Data Lake Analytics see [the documentation](https://docs.microsoft.com/en-us/azure/data-lake-analytics/data-lake-analytics-overview)
 
 ## Azure Machine Learning
 
