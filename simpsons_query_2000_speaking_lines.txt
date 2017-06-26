@@ -1,0 +1,42 @@
+//Declare input/output destinations as variables
+DECLARE @in  string = "/SimpsonsData/simpsons_script_lines.csv";
+DECLARE @out string = "/SimpsonsData/top_speakers_5000.csv";
+ 
+//Extract data to query from all CSV files in NetherTestData to compute DAU's
+//Schema needed: Unqiue user ID and Event Date in ISO format
+@result =
+    EXTRACT id  int,
+            episode_id  int,
+            number      int,
+            raw_text    string,
+            timestamp_in_ms string,
+            speaking_line   string,
+            character_id    int,
+            location_id     int,
+            raw_character_text  string,
+            raw_location_text   string,
+            spoken_words    string,
+            normalized_text string,
+            word_count  int
+    FROM @in
+    USING Extractors.Csv(skipFirstNRows:1);
+
+// Take data and count distinct user IDs. Aggregate the query by full date (per day)
+@calculation =
+    SELECT
+        raw_character_text,
+        COUNT(DISTINCT(id)) AS count
+    FROM @result
+    GROUP BY raw_character_text;
+
+@toprank =
+    SELECT raw_character_text,
+           count
+    FROM @calculation
+    WHERE count >= 2000;
+    
+
+// Output the aggregated DAU results to output file specified above
+OUTPUT @toprank
+    TO @out
+    USING Outputters.Csv();
