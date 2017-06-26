@@ -4,8 +4,7 @@ During this hands on lab at TechHer UK June 2017 we will be using the **Azure Da
 
 ### Pre-requistes:
 * [An Azure Subscription](https://azure.microsoft.com/en-gb/free/)
-* [Azure Storage Explorer](http://storageexplorer.com/)
-* [ADLcopy tool](https://www.microsoft.com/en-us/download/details.aspx?id=50358)
+* A modern web browser
 
 Please download the Azure Storage Explorer and ADLCopy tools from the links above
 
@@ -321,6 +320,8 @@ Review the output of the query:
 In this part of the lab you have walked through sample scripts and learnt about the Azure Portal for submitting and reviewing scripts, used our own data to query and added cognitive capabilities.
 
 For further information on Azure Data Lake Analytics see [the documentation](https://docs.microsoft.com/en-us/azure/data-lake-analytics/data-lake-analytics-overview)
+
+For further code samples see the [Azure/usql github repo](https://github.com/Azure/usql)
 
 ## Azure Machine Learning
 
