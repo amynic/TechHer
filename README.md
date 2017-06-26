@@ -31,7 +31,7 @@ Lets get started by creating an Azure Data Lake Analytics account
 
 Once created you will see the screen below load. Have a look around and then click on **'Sample Scripts'** to walk you through some query and process examples for Azure Data Lake Analytics in the Azure Portal.
 
-![Alt text](images/adlacreated.JPG)  
+![Alt text](images/samplescripts.JPG)  
 
 Once loaded click 'Sample Data Missing' and 'U-SQL Advanced Analytics Extensions' to download the data and extensions needed to run the sample.
 
@@ -63,7 +63,7 @@ Now choose submit job using 'Submit Job' button at the top of the blade.
 
 Once submitted you will see a blade with the job details and the progress of the job.
 
-![ADLA Portal](\images\jobsubmitted.JPG)
+![ADLA Portal](images/jobsubmitted.JPG)
 
 Once the job is running the blade will also produce a job graph - showing the breakdown of the query (input files, output files, extract and aggregate processes)
 
