@@ -6,8 +6,7 @@ REFERENCE ASSEMBLY [TextKeyPhrase];
 DECLARE @in  string = "/SimpsonsData/simpsons_script_lines.csv";
 DECLARE @out string = "/SimpsonsData/simpsons_text_analysis.csv";
 
-//Extract data to query from all CSV files in NetherTestData to compute DAU's
-//Schema needed: Unqiue user ID and Event Date in ISO format
+//Extract data to query from CSV file
 @result =
     EXTRACT id  int,
             episode_id  int,
@@ -25,7 +24,7 @@ DECLARE @out string = "/SimpsonsData/simpsons_text_analysis.csv";
     FROM @in
     USING Extractors.Csv(skipFirstNRows:1);
 
-
+// Apply the Cognition.Text.SentimentAnalyzer function to the Text Column in the dataset
 @sentiment =
     PROCESS @result
 
@@ -45,7 +44,7 @@ DECLARE @out string = "/SimpsonsData/simpsons_text_analysis.csv";
             Text
     USING new Cognition.Text.SentimentAnalyzer(true);
 
-// Output the aggregated DAU results to output file specified above
+// Output the results to a csv file
 OUTPUT @sentiment
     TO @out
     USING Outputters.Csv();

@@ -137,8 +137,7 @@ and copy the code below *(or get code from the adla_scripts folder: simpsons_que
 DECLARE @in  string = "/SimpsonsData/simpsons_script_lines.csv";
 DECLARE @out string = "/SimpsonsData/top_speakers_10000.csv";
  
-//Extract data to query from all CSV files in NetherTestData to compute DAU's
-//Schema needed: Unqiue user ID and Event Date in ISO format
+//Extract data to query from CSV file
 @result =
     EXTRACT id  int,
             episode_id  int,
@@ -156,7 +155,7 @@ DECLARE @out string = "/SimpsonsData/top_speakers_10000.csv";
     FROM @in
     USING Extractors.Csv(skipFirstNRows:1);
 
-// Take data and count distinct user IDs. Aggregate the query by full date (per day)
+// Take extracted data and count the character spoken lines in the dataset
 @calculation =
     SELECT
         raw_character_text,
@@ -164,6 +163,7 @@ DECLARE @out string = "/SimpsonsData/top_speakers_10000.csv";
     FROM @result
     GROUP BY raw_character_text;
 
+//Select the characters to return if they have more than 10,000 lines
 @toprank =
     SELECT raw_character_text,
            count
@@ -171,7 +171,7 @@ DECLARE @out string = "/SimpsonsData/top_speakers_10000.csv";
     WHERE count >= 10000;
     
 
-// Output the aggregated DAU results to output file specified above
+// Output the aggregated data to a results file
 OUTPUT @toprank
     TO @out
     USING Outputters.Csv();
@@ -194,6 +194,75 @@ Make edits to the new query so that:
 ![ADLA Portal](images/editscript.JPG)
 
 and submit the job. Once complete explore the output results file to see which characters speak more than 2000 lines in the dataset - **are they who you expect?**
+
+### Exercise 3: Cognitive Extensions
+
+Now we will look at creating a query which uses the Text Analytics Cognitive Extension available in Azure Data Lake Analytics. For more information on [Cognitive Extensions see the documentation](https://docs.microsoft.com/en-us/azure/data-lake-analytics/data-lake-analytics-u-sql-cognitive)
+
+First close all the blades you have open until you are at the Azure Data Lake Analytics service main page.
+
+Select **'New Job'**
+
+Rename the job **'Text Analytics'**
+
+and add/review the code below:
+
+```
+REFERENCE ASSEMBLY [TextCommon];
+REFERENCE ASSEMBLY [TextSentiment];
+REFERENCE ASSEMBLY [TextKeyPhrase];
+
+//Declare input/output destinations as variables
+DECLARE @in  string = "/SimpsonsData/simpsons_script_lines.csv";
+DECLARE @out string = "/SimpsonsData/simpsons_text_analysis.csv";
+
+//Extract data to query from CSV file
+@result =
+    EXTRACT id  int,
+            episode_id  int,
+            number      int,
+            raw_text    string,
+            timestamp_in_ms string,
+            speaking_line   string,
+            character_id    int,
+            location_id     int,
+            raw_character_text  string,
+            raw_location_text   string,
+            spoken_words    string,
+            Text string,
+            word_count  int
+    FROM @in
+    USING Extractors.Csv(skipFirstNRows:1);
+
+// Apply the Cognition.Text.SentimentAnalyzer function to the Text Column in the dataset
+@sentiment =
+    PROCESS @result
+
+    PRODUCE id,
+            episode_id,
+            raw_character_text,
+            raw_location_text,
+            spoken_words,
+            Text,
+            Sentiment string,
+            Conf double
+    READONLY id,
+            episode_id,
+            raw_character_text,
+            raw_location_text,
+            spoken_words,
+            Text
+    USING new Cognition.Text.SentimentAnalyzer(true);
+
+// Output the results to a csv file
+OUTPUT @sentiment
+    TO @out
+    USING Outputters.Csv();
+```
+and select **'Submit Job'**
+
+This query will take slightly longer to run than the previous queries
+![ADLA Portal](images/textanalytics.JPG)
 
 
 
