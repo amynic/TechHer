@@ -31,7 +31,7 @@ Lets get started by creating an Azure Data Lake Analytics account
 
 Once created you will see the screen below load. Have a look around and then click on **'Sample Scripts'** to walk you through some query and process examples for Azure Data Lake Analytics in the Azure Portal.
 
-![ADLA Portal](https://github.com/amynic/TechHer/tree/master/images/samplescripts.jpg)
+![ADLA Portal](http://github.com/amynic/TechHer/blob/master/images/samplescripts.JPG)
 
 Once loaded click 'Sample Data Missing' and 'U-SQL Advanced Analytics Extensions' to download the data and extensions needed to run the sample.
 
