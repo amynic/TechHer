@@ -124,7 +124,63 @@ Once the upload is complete (this will take a couple of minutes) click on the fi
 
 ![ADLA Portal](images/simpsonsdata.JPG)
 
+Now go back to the main page of the portal (select Microsoft Azure logo in top left corner of the screen) and find and open your Azure Data Lake Analytics instance
 
+Once open, select **'New Job'**
+
+Edit the Job Name to **'Simpsons 1'**
+
+and copy the code below *(or get code from the adla_scripts folder: simpsons_query_10000_speaking_lines.txt)*
+
+```
+//Declare input/output destinations as variables
+DECLARE @in  string = "/SimpsonsData/simpsons_script_lines.csv";
+DECLARE @out string = "/SimpsonsData/top_speakers_10000.csv";
+ 
+//Extract data to query from all CSV files in NetherTestData to compute DAU's
+//Schema needed: Unqiue user ID and Event Date in ISO format
+@result =
+    EXTRACT id  int,
+            episode_id  int,
+            number      int,
+            raw_text    string,
+            timestamp_in_ms string,
+            speaking_line   string,
+            character_id    int,
+            location_id     int,
+            raw_character_text  string,
+            raw_location_text   string,
+            spoken_words    string,
+            normalized_text string,
+            word_count  int
+    FROM @in
+    USING Extractors.Csv(skipFirstNRows:1);
+
+// Take data and count distinct user IDs. Aggregate the query by full date (per day)
+@calculation =
+    SELECT
+        raw_character_text,
+        COUNT(DISTINCT(id)) AS count
+    FROM @result
+    GROUP BY raw_character_text;
+
+@toprank =
+    SELECT raw_character_text,
+           count
+    FROM @calculation
+    WHERE count >= 10000;
+    
+
+// Output the aggregated DAU results to output file specified above
+OUTPUT @toprank
+    TO @out
+    USING Outputters.Csv();
+```
+and select **'Submit Job'**
+
+![ADLA Portal](images/simpsons1.JPG)
+
+Once the job is completed review the U-SQL query code and then explore the output file. You should see the characters in the Simpsons who have spoken more than 10,000 lines - **are they who you expect?**
 
 
 

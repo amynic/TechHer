@@ -1,6 +1,6 @@
 //Declare input/output destinations as variables
 DECLARE @in  string = "/SimpsonsData/simpsons_script_lines.csv";
-DECLARE @out string = "/SimpsonsData/top_speakers_5000.csv";
+DECLARE @out string = "/SimpsonsData/top_speakers_10000.csv";
  
 //Extract data to query from all CSV files in NetherTestData to compute DAU's
 //Schema needed: Unqiue user ID and Event Date in ISO format
