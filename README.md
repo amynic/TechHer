@@ -8,7 +8,7 @@ During this hands on lab at [TechHer UK June 2017](http://techher.uk/) we will b
 
 Please download the Azure Storage Explorer and ADLCopy tools from the links above
 
-## Azure Data Lake Analytics
+# Azure Data Lake Analytics
 
 ### Exercise 1: Sample Scripts
 
@@ -323,7 +323,7 @@ For further information on Azure Data Lake Analytics see [the documentation](htt
 
 For further code samples see the [Azure/usql github repo](https://github.com/Azure/usql)
 
-## Azure Machine Learning
+# Azure Machine Learning
 
 **Dataset used: datasets/carPriceData.csv**
 
