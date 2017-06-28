@@ -328,3 +328,71 @@ For further code samples see the [Azure/usql github repo](https://github.com/Azu
 **Dataset used: datasets/carPriceData.csv**
 
 For this sample, open the AzureMachineLearningLab.docx to view full material
+
+### The Problem Domain
+
+During this lab, we will create and evaluate two models, that given past data collected about cars and their values, will try to predict the price/value of a car given other attributes associated with the car:
+
+* The attribute columns in the dataset include values such as the model/make, fuel type and body style as well as performance values such as MPG, horsepower and engine type
+* The value we are trying to predict is the price of the car. In this dataset, the values range from £5,000 to £45,000.
+
+We will retrieve data from an Azure Blob Storage account and start to pre-process the dataset ready to train a machine learning model. The model we’ll create is a form of supervised learning so we will use historical car attributes and values to predict the price of future cars we might receive. This model will perform a regression algorithm to try and predict the actual price of the car with the lowest amount of error, for example £16,595. This information is in the sample data in the ‘price’ column.
+
+
+### Setup an Azure ML Account
+
+In the previous lab, you should have setup your Azure Subscription. Now visit the link: [http://studio.azureml.net/](http://studio.azureml.net/) and choose **‘Sign Up’**
+Select the **Free Workspace Option** (green tab) and sign in using your Microsoft Azure credentials
+
+![Azure ML](images/workspaceoption.png)
+
+This will take you to the Azure Machine Learning Studio, by default you will end in the Experiments tab on the left but there are other tabs available and described below:
+
+* **Projects:** Like a file-explorer, a place to keep all associated resources together for a similar project. You may look at creating a project called ‘AzureMLStudioLab’ to keep all the experiments, notebooks and datasets you create today in one place that’s well organised.
+* **Experiments:** As you start creating machine learning experiments/models you will build up a list of different experiments that can be add, edited and deleted by an owner of the workspace
+* **Web Services:** Once you have created a model and are ready to make it a production-ready API, this is the section you will find all your web services listed under
+* **Notebooks:** You may have already explored notebooks. Although the Studio provides an easy to use, yet powerful, drag-drop style of creating experiments, you sometimes need a good old “REPL” to have a tight loop where you enter some script code and get a response. This functionality is integrated into ML Studio through Jupyter Notebooks
+* **Datasets:** A place to store datasets/folders of scripts or functions (CSV, TSV,.zip) that you upload from your local machine
+* **Trained Models:** Each time you create a model and start scoring against it to create a web service, this will create a ‘Trained Model’ module that will be reusable. This will be your chosen algorithm, trained on your chosen data in order to answer a machine learning question. 
+* **Settings:** The settings tab allows you to add descriptions to your workspace as well as add new users so you can work in a more collaborative environment when designing your machine learning algorithms
+
+![Azure ML](images/azuremlworkspace.png)
+
+
+### Start with a sample
+
+For a shorter sample of using Azure Machine Learning, please find an experiment already pre-processed in the [Cortana Intelligence Gallery](https://gallery.cortanaintelligence.com/) here: 
+* [https://gallery.cortanaintelligence.com/Experiment/TechHer-Sample-Experiment](https://gallery.cortanaintelligence.com/Experiment/TechHer-Sample-Experiment)
+
+![Azure ML](images/sample.jpg)
+
+Now choose the button **Open in Studio**
+
+An check the experiment will be placed in your free workspace
+
+![Azure ML](images/chooseaccount.jpg)
+
+Choose the tick if correct and the experiment will open in Azure Machine Learning
+
+![Azure ML](images/experimentopen.jpg)
+
+Once open select the **Run** button in the bottom toolbar and wait until the experiment modules have green ticks by them
+
+![Azure ML](images/experimentrun.jpg)
+
+Take a look at the sample data by selecting the output port of the final model 'edit metadata' 
+
+* Right Click output port of Edit Metadata Module
+* Select Vizualise
+
+![Azure ML](images/visualise.jpg)
+
+![Azure ML](images/data.jpg)
+
+### Back to the Document
+
+Now you are ready to build the Supervised Machine Learning Regression model to predict the price of a car.
+
+Open the **AzureMachineLearningLab.docx** or **AzureMachineLearningLab.pdf** documents and find the Chapter entitles **Training the Model** and work through the content from there.
+
+ ![Azure ML](images/trainingthemodel.jpg)
