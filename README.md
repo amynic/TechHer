@@ -364,30 +364,30 @@ This will take you to the Azure Machine Learning Studio, by default you will end
 For a shorter sample of using Azure Machine Learning, please find an experiment already pre-processed in the [Cortana Intelligence Gallery](https://gallery.cortanaintelligence.com/) here: 
 * [https://gallery.cortanaintelligence.com/Experiment/TechHer-Sample-Experiment](https://gallery.cortanaintelligence.com/Experiment/TechHer-Sample-Experiment)
 
-![Azure ML](images/sample.jpg)
+![Azure ML](images/sample.JPG)
 
 Now choose the button **Open in Studio**
 
 An check the experiment will be placed in your free workspace
 
-![Azure ML](images/chooseaccount.jpg)
+![Azure ML](images/chooseaccount.JPG)
 
 Choose the tick if correct and the experiment will open in Azure Machine Learning
 
-![Azure ML](images/experimentopen.jpg)
+![Azure ML](images/experimentopen.JPG)
 
 Once open select the **Run** button in the bottom toolbar and wait until the experiment modules have green ticks by them
 
-![Azure ML](images/experimentrun.jpg)
+![Azure ML](images/experimentrun.JPG)
 
 Take a look at the sample data by selecting the output port of the final model 'edit metadata' 
 
 * Right Click output port of Edit Metadata Module
 * Select Vizualise
 
-![Azure ML](images/visualise.jpg)
+![Azure ML](images/visualise.JPG)
 
-![Azure ML](images/data.jpg)
+![Azure ML](images/data.JPG)
 
 ### Back to the Document
 
@@ -395,4 +395,4 @@ Now you are ready to build the Supervised Machine Learning Regression model to p
 
 Open the **AzureMachineLearningLab.docx** or **AzureMachineLearningLab.pdf** documents and find the Chapter entitles **Training the Model** and work through the content from there.
 
- ![Azure ML](images/trainingthemodel.jpg)
+ ![Azure ML](images/trainingthemodel.JPG)
