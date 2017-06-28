@@ -396,3 +396,16 @@ Now you are ready to build the Supervised Machine Learning Regression model to p
 Open the **AzureMachineLearningLab.docx** or **AzureMachineLearningLab.pdf** documents and find the Chapter entitles **Training the Model** and work through the content from there.
 
  ![Azure ML](images/trainingthemodel.JPG)
+
+ ### Publishing your Model
+
+ Next step can be to publish your experiment as a predictive model that can be called via a REST API
+
+ Follow the document **AzureMachineLearningLab_Publishing.docx**
+ or **AzureMachineLearningLab_Publishing.pdf** 
+
+ If you don't have a completed experiment at this point you can find one here:
+ *  [https://gallery.cortanaintelligence.com/Experiment/TechHer-Full-Experiment](https://gallery.cortanaintelligence.com/Experiment/TechHer-Full-Experiment)
+
+![Azure ML](images/fullexperiment.JPG)
+
