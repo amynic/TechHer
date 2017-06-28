@@ -1,6 +1,6 @@
 # TechHer: Let your Data tell you the Real Story: Advanced Analytics on Azure
 
-During this hands on lab at TechHer UK June 2017 we will be using the **Azure Data Lake Analytics** and **Azure Machine Learning** services with some sample datasets.
+During this hands on lab at [TechHer UK June 2017](http://techher.uk/) we will be using the **Azure Data Lake Analytics** and **Azure Machine Learning** services with some sample datasets.
 
 ### Pre-requistes:
 * [An Azure Subscription](https://azure.microsoft.com/en-gb/free/)
@@ -325,4 +325,6 @@ For further code samples see the [Azure/usql github repo](https://github.com/Azu
 
 ## Azure Machine Learning
 
-**Dataset used:**
+**Dataset used: datasets/carPriceData.csv**
+
+For this sample, open the AzureMachineLearningLab.docx to view full material
