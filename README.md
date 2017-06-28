@@ -327,7 +327,7 @@ For further code samples see the [Azure/usql github repo](https://github.com/Azu
 
 **Dataset used: datasets/carPriceData.csv**
 
-For this sample, open the AzureMachineLearningLab.docx to view full material
+For this sample, open the **azureml_lab/AzureMachineLearningLab.docx** to view full material
 
 ### The Problem Domain
 
@@ -393,7 +393,9 @@ Take a look at the sample data by selecting the output port of the final model '
 
 Now you are ready to build the Supervised Machine Learning Regression model to predict the price of a car.
 
-Open the **AzureMachineLearningLab.docx** or **AzureMachineLearningLab.pdf** documents and find the Chapter entitles **Training the Model** and work through the content from there.
+Open the **azureml_lab/AzureMachineLearningLab.docx** 
+or **azureml_lab/AzureMachineLearningLab.pdf**
+ documents and find the Chapter entitles **Training the Model** and work through the content from there.
 
  ![Azure ML](images/trainingthemodel.JPG)
 
@@ -401,8 +403,8 @@ Open the **AzureMachineLearningLab.docx** or **AzureMachineLearningLab.pdf** doc
 
  Next step can be to publish your experiment as a predictive model that can be called via a REST API
 
- Follow the document **AzureMachineLearningLab_Publishing.docx**
- or **AzureMachineLearningLab_Publishing.pdf** 
+ Follow the document **azureml_lab/AzureMachineLearningLab_Publishing.docx**
+ or **azureml_lab/AzureMachineLearningLab_Publishing.pdf** 
 
  If you don't have a completed experiment at this point you can find one here:
  *  [https://gallery.cortanaintelligence.com/Experiment/TechHer-Full-Experiment](https://gallery.cortanaintelligence.com/Experiment/TechHer-Full-Experiment)
