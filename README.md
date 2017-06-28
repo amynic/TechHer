@@ -1,3 +1,5 @@
+![TechHer](images/logo.JPG)  
+
 # TechHer: Let your Data tell you the Real Story: Advanced Analytics on Azure
 
 During this hands on lab at [TechHer UK June 2017](http://techher.uk/) we will be using the **Azure Data Lake Analytics** and **Azure Machine Learning** services with some sample datasets.
