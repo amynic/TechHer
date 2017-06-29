@@ -2,6 +2,8 @@
 
 During this hands on lab at [TechHer UK June 2017](http://techher.uk/) we will be using the **Azure Data Lake Analytics** and **Azure Machine Learning** services with some sample datasets.
 
+For any feedback on the lab please contact me on **Twitter: @amykatenicho** or **LinkedIn: https://www.linkedin.com/in/amykatenicho/** 
+
 ### Pre-requistes:
 * [An Azure Subscription](https://azure.microsoft.com/en-gb/free/)
 * A modern web browser
@@ -18,7 +20,7 @@ Lets get started by creating an Azure Data Lake Analytics account
     1. Sign in to the Azure portal.
     2. Click **New > Data + analytics > Data Lake Analytics**.
     3. Select values for the following items: 
-        1. **Name:** The name of the Data Lake Analytics account. *[Techher_initials]*
+        1. **Name:** The name of the Data Lake Analytics account. *[techherinitials]* (note keep this all lowercase and try and have a unqiue name - e.g. include your initials or alias)
         2. **Subscription:** The Azure subscription used for the account.
         3. **Resource Group:** The Azure resource group in which to create the account. *[Techher_initials]*
         4. **Location:** The Azure datacenter for the Data Lake Analytics account. *[North Europe]* 
