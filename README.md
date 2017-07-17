@@ -541,9 +541,8 @@ Select your sample deployment and click the 'bin' icon to remove all resources.
 
 ## Remove Cognitive Service resources
 
+Nothing we used in this section will incur any costs, free trial API
+
 ## Remove Azure Machine Learning Resources
 Nothing we used in this section will incur any costs (free workspace)
 However in the azure portal you can remove the Machine Learning Workspace
-
-## Remove Azure Data Lake Resources
-
