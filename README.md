@@ -417,3 +417,51 @@ or **azureml_lab/AzureMachineLearningLab.pdf**
 
 ![Azure ML](images/fullexperiment.JPG)
 
+
+# Microsoft Cognitive Services
+
+For more information on these services: [https://azure.microsoft.com/en-gb/services/cognitive-services/](https://azure.microsoft.com/en-gb/services/cognitive-services/)
+
+
+
+
+# Microsoft R Server and R in SQL Server
+
+A great place to get started with our offerings in this space is via the solution templates in the Cortana Intelligence Gallery: [https://gallery.cortanaintelligence.com/](https://gallery.cortanaintelligence.com/)
+
+In this lab we will look at the **Loan Credit Risk with SQL Server and R**: [https://gallery.cortanaintelligence.com/Solution/Loan-Credit-Risk-with-SQL-Server-2](https://gallery.cortanaintelligence.com/Solution/Loan-Credit-Risk-with-SQL-Server-2)
+
+1. First browse to the [Cortana Intelligence Gallery](https://gallery.cortanaintelligence.com/)
+2. Search for **'r server'** in the top search box
+3. Once results have loaded, select **'Solution'** in the **refine by categories** section on the left
+4. Select **'Loan Credit Risk with SQL Server'**
+
+![Solution Template](images/rserver.JPG)
+
+5. Read through the descripton of the solution we will deploy
+6. Now click **'Deploy'**
+
+![Solution Template](images/loancreditrisk.JPG)
+
+7. Now to setup some details for the deployment within the [Data Science Virtual Machine (DSVM)](https://docs.microsoft.com/en-us/azure/machine-learning/machine-learning-data-science-virtual-machine-overview)
+8. Enter a deployment name, for example **'rsample'**, choose a subscription, a location for the deployment of resources for example **'East US'** and provide a short description 
+
+*Note: you may need to accept some license agreements for the solution to deploy in your subscription, enable for the subscription and then continue*
+
+9. Click **Create**
+
+![Solution Template](images/rsample.JPG)
+
+10. Now provide details for the DSVM such as username, password and name
+11. Choose **Next**
+
+![Solution Template](images/rsampledetails.JPG)
+
+12. The deployment could take up to 20 mins but progress will be shown in the screen below.
+
+*NOTE: if there are any issues with deployment and it fails, please select retry*
+
+![Solution Template](images/creating.JPG)
+
+
+
