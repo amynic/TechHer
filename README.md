@@ -5,6 +5,7 @@ During this hands on lab at [TechHer UK June 2017](http://techher.uk/) we will b
 * **Azure Machine Learning** [Link](https://github.com/amynic/TechHer#azure-machine-learning)
 * **Microsoft Cognitive Services** [Link](https://github.com/amynic/TechHer#microsoft-cognitive-services)
 * **Microsoft R Server** [Link](https://github.com/amynic/TechHer#microsoft-r-server-and-r-in-sql-server)
+* **Tidy Up Resources** [Link](https://github.com/amynic/TechHer#tidy-up-resources)
 
 For any feedback on the lab please contact me on **Twitter: @amykatenicho** or **LinkedIn: https://www.linkedin.com/in/amykatenicho/** 
 
@@ -422,6 +423,48 @@ or **azureml_lab/AzureMachineLearningLab.pdf**
 
 For more information on these services: [https://azure.microsoft.com/en-gb/services/cognitive-services/](https://azure.microsoft.com/en-gb/services/cognitive-services/)
 
+## Text Analytics Sample
+
+Go to [https://azure.microsoft.com/en-gb/try/cognitive-services/](https://azure.microsoft.com/en-gb/try/cognitive-services/) to obtain a free API key. Choose the **'Language'** tab and then **'Text Analytics API'** and create
+
+![TextAPI](images/textapi.JPG)
+
+Agree to the terms and conditions and then sign in using a preferred account
+
+![TextAPI](images/agree.JPG)
+![TextAPI](images/signin.JPG)
+
+Then you should be assigned an API key for Text Analytics free for 30 days. Take note of the **Endpoint and Key 1, Key 2** values, you will need them shortly.
+
+Next you can either use the in-browser testing API console here: [https://westus.dev.cognitive.microsoft.com/docs/services/TextAnalytics.V2.0/operations/56f30ceeeda5650db055a3c7/console](https://westus.dev.cognitive.microsoft.com/docs/services/TextAnalytics.V2.0/operations/56f30ceeeda5650db055a3c7/console)
+
+Or use an app such as [Postman](https://www.getpostman.com/) or [Fiddler](http://www.telerik.com/fiddler/fiddlercore).
+
+Now follow **'Task 2'** in the documentation getting started guide to detect sentiment, key phrases and language in a piece of text.
+
+[Task 2 Instructions here](https://docs.microsoft.com/en-gb/azure/cognitive-services/text-analytics/quick-start#task-2---detect-sentiment-key-phrases-and-languages)
+
+For example using Postman, the requests look like below:
+
+![TextAPI](images/headers.JPG)
+![TextAPI](images/input.JPG)
+
+Responses returned for each of the API calls:
+
+**POST https://westus.api.cognitive.microsoft.com/text/analytics/v2.0/sentiment**
+
+![TextAPI](images/sentimentresult.JPG)
+
+**POST https://westus.api.cognitive.microsoft.com/text/analytics/v2.0/keyphrases**
+
+![TextAPI](images/keyphrasesresult.JPG)
+
+**POST https://westus.api.cognitive.microsoft.com/text/analytics/v2.0/languages**
+
+![TextAPI](images/languagesresult.JPG)
+
+## Computer Vision Sample
+
 
 
 
@@ -482,7 +525,7 @@ In this lab we will look at the **Loan Credit Risk with SQL Server and R**: [htt
 
 We setup some solution resources during this lab, in order to stop them occuring charges please remove any resources setup.
 
-### Remove Solution Template: R Server
+## Remove Solution Template: R Server
 
 There is a quick way to remove all resources from this lab, go to: [https://start.cortanaintelligence.com/Deployments](https://start.cortanaintelligence.com/Deployments)
 
@@ -490,11 +533,11 @@ There is a quick way to remove all resources from this lab, go to: [https://star
 
 Select your sample deployment and click the 'bin' icon to remove all resources.
 
-### Remove Cognitive Service resources
+## Remove Cognitive Service resources
 
-### Remove Azure Machine Learning Resources
+## Remove Azure Machine Learning Resources
 Nothing we used in this section will incur any costs (free workspace)
 However in the azure portal you can remove the Machine Learning Workspace
 
-### Remove Azure Data Lake Resources
+## Remove Azure Data Lake Resources
 
