@@ -478,5 +478,23 @@ In this lab we will look at the **Loan Credit Risk with SQL Server and R**: [htt
 
 ![Solution Template](images/startupnotes.JPG)
 
+# Tidy Up Resources
 
+We setup some solution resources during this lab, in order to stop them occuring charges please remove any resources setup.
+
+### Remove Solution Template: R Server
+
+There is a quick way to remove all resources from this lab, go to: [https://start.cortanaintelligence.com/Deployments](https://start.cortanaintelligence.com/Deployments)
+
+![Solution Template](images/removeresources.JPG)
+
+Select your sample deployment and click the 'bin' icon to remove all resources.
+
+### Remove Cognitive Service resources
+
+### Remove Azure Machine Learning Resources
+Nothing we used in this section will incur any costs (free workspace)
+However in the azure portal you can remove the Machine Learning Workspace
+
+### Remove Azure Data Lake Resources
 
