@@ -1,10 +1,10 @@
 # TechHer: Let your Data tell you the Real Story: Advanced Analytics on Azure
 
-During this hands on lab at [TechHer UK June 2017](http://techher.uk/) we will be using the services listed below:
-* **Azure Data Lake Analytics** [Link](https://azure.microsoft.com/en-us/services/data-lake-analytics/)
-* **Azure Machine Learning** [Link](https://azure.microsoft.com/en-us/services/machine-learning/)
-* **Microsoft Cognitive Services** [Link](https://azure.microsoft.com/en-gb/services/cognitive-services/)
-* **Microsoft R Server** [Link](https://azure.microsoft.com/en-us/services/machine-learning/)
+During this hands on lab at [TechHer UK June 2017](http://techher.uk/) we will be using the services listed below, *click the link to jump to the right section*:
+* **Azure Data Lake Analytics** [Link](https://github.com/amynic/TechHer#azure-data-lake-analytics)
+* **Azure Machine Learning** [Link](https://github.com/amynic/TechHer#azure-machine-learning)
+* **Microsoft Cognitive Services** [Link](https://github.com/amynic/TechHer#microsoft-cognitive-services)
+* **Microsoft R Server** [Link](https://github.com/amynic/TechHer#microsoft-r-server-and-r-in-sql-server)
 
 For any feedback on the lab please contact me on **Twitter: @amykatenicho** or **LinkedIn: https://www.linkedin.com/in/amykatenicho/** 
 
