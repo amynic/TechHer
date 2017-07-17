@@ -465,7 +465,13 @@ Responses returned for each of the API calls:
 
 ## Computer Vision Sample
 
+If you want to try out the Computer Vision sample - try out the Analysing Image capability with a C# sample application in your DSVM
 
+[https://docs.microsoft.com/en-us/azure/cognitive-services/computer-vision/quickstarts/csharp#AnalyzeImage](https://docs.microsoft.com/en-us/azure/cognitive-services/computer-vision/quickstarts/csharp#AnalyzeImage)
+
+In the same place you got your Text Analytics API key you can scroll to the bottom and **'Add'** the Computer Vision API key as well
+
+![ComputerVisionAPI](images/addapi.jpg)
 
 
 # Microsoft R Server and R in SQL Server
