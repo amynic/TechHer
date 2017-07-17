@@ -471,7 +471,7 @@ If you want to try out the Computer Vision sample - try out the Analysing Image 
 
 In the same place you got your Text Analytics API key you can scroll to the bottom and **'Add'** the Computer Vision API key as well
 
-![ComputerVisionAPI](images/addapi.jpg)
+![ComputerVisionAPI](images/addapi.JPG)
 
 
 # Microsoft R Server and R in SQL Server
