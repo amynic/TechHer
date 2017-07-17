@@ -463,5 +463,20 @@ In this lab we will look at the **Loan Credit Risk with SQL Server and R**: [htt
 
 ![Solution Template](images/creating.JPG)
 
+![Solution Template](images/creatingstep2.JPG)
+
+13. Once complete you can connect to the DSVM via the link highlighted below. This will take you to the Azure Portal
+
+![Solution Template](images/creatingcomplete.JPG)
+
+14. In the Azure portal, click Connect and sign into the VM with the details you provided on setup
+
+![Solution Template](images/connectdsvm.JPG)
+
+15. Once signed in and the VM had loaded, by default a browser windows should open with details of the solution setup. 
+16. Read through these details and start exploring R in SQL Server
+
+![Solution Template](images/startupnotes.JPG)
+
 
 
