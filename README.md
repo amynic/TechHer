@@ -6,6 +6,7 @@ During this hands on lab at [TechHer UK June 2017](http://techher.uk/) we will b
 * **Microsoft Cognitive Services** [Link](https://github.com/amynic/TechHer#microsoft-cognitive-services)
 * **Microsoft R Server** [Link](https://github.com/amynic/TechHer#microsoft-r-server-and-r-in-sql-server)
 * **Tidy Up Resources** [Link](https://github.com/amynic/TechHer#tidy-up-resources)
+* **EXTRA: Azure Machine Learning Workbench Documentation Tutorial** [Link](https://docs.microsoft.com/en-us/azure/machine-learning/preview/overview-what-is-azure-ml) 
 
 For any feedback on the lab please contact me on **Twitter: @amykatenicho** or **LinkedIn: https://www.linkedin.com/in/amykatenicho/** 
 
@@ -546,3 +547,17 @@ Nothing we used in this section will incur any costs, free trial API
 ## Remove Azure Machine Learning Resources
 Nothing we used in this section will incur any costs (free workspace)
 However in the azure portal you can remove the Machine Learning Workspace
+
+
+# EXTRA: Azure Machine Learning Workbench Documentation Tutorial
+
+The Azure machine learning workbench team have put together a great step by step tutorial for you to explore the new workbench tool and see how this could support your machine learning projects in production
+
+Follow the step-step below from installation to deployment. Also keep exploring the documentation for more features and examples [here](https://docs.microsoft.com/en-us/azure/machine-learning/preview/)
+
+1)	Install and Create workspaces: [https://docs.microsoft.com/en-us/azure/machine-learning/preview/quickstart-installation](https://docs.microsoft.com/en-us/azure/machine-learning/preview/quickstart-installation)
+2)	TUTORIAL: Prepare data: [https://docs.microsoft.com/en-us/azure/machine-learning/preview/tutorial-classifying-iris-part-1 ](https://docs.microsoft.com/en-us/azure/machine-learning/preview/tutorial-classifying-iris-part-1)
+3)	TUTORIAL: Build a model: [https://docs.microsoft.com/en-us/azure/machine-learning/preview/tutorial-classifying-iris-part-2](https://docs.microsoft.com/en-us/azure/machine-learning/preview/tutorial-classifying-iris-part-2 )
+4)	TUTORIAL: Deploy a model: [https://docs.microsoft.com/en-us/azure/machine-learning/preview/tutorial-classifying-iris-part-3](https://docs.microsoft.com/en-us/azure/machine-learning/preview/tutorial-classifying-iris-part-3 )
+
+![Azure Machine Learning Workbench](images/mlworkbench.JPG)
