@@ -6,12 +6,12 @@ During this hands on lab at [TechHer UK June 2017](http://techher.uk/) we will b
 * **Microsoft Cognitive Services** [Link](https://github.com/amynic/TechHer#microsoft-cognitive-services)
 * **Microsoft R Server** [Link](https://github.com/amynic/TechHer#microsoft-r-server-and-r-in-sql-server)
 * **Tidy Up Resources** [Link](https://github.com/amynic/TechHer#tidy-up-resources)
-* **EXTRA: Azure Machine Learning Workbench Documentation Tutorial** [Link](https://docs.microsoft.com/en-us/azure/machine-learning/preview/overview-what-is-azure-ml) 
+* **EXTRA: Azure Machine Learning Workbench Documentation Tutorial** [Link](https://docs.microsoft.com/azure/machine-learning/preview/overview-what-is-azure-ml?WT.mc_id=aiml-0000-amynic) 
 
 For any feedback on the lab please contact me on **Twitter: @amykatenicho** or **LinkedIn: https://www.linkedin.com/in/amykatenicho/** 
 
 ### Pre-requistes:
-* [An Azure Subscription](https://azure.microsoft.com/en-gb/free/)
+* [An Azure Subscription](https://azure.microsoft.com/free/?WT.mc_id=aiml-0000-amynic)
 * A modern web browser
 
 Please download the Azure Storage Explorer and ADLCopy tools from the links above
@@ -94,7 +94,7 @@ There are 3 more queries to explore:
 
 Go ahead and run/explore the queries that show you how to create database tables in u-sql in your data lake store, populate the .TSV file data into the database table and query that table to show data in there.
 
-Feel free to [tweak queries and explore the U-SQL language further](https://docs.microsoft.com/en-us/azure/data-lake-analytics/data-lake-analytics-u-sql-get-started).
+Feel free to [tweak queries and explore the U-SQL language further](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-get-started?WT.mc_id=aiml-0000-amynic).
 
 
 ### Exercise 2: Simpsons Data
@@ -204,7 +204,7 @@ and submit the job. Once complete explore the output results file to see which c
 
 ### Exercise 3: Cognitive Extensions
 
-Now we will look at creating a query which uses the Text Analytics Cognitive Extension available in Azure Data Lake Analytics. For more information on [Cognitive Extensions see the documentation](https://docs.microsoft.com/en-us/azure/data-lake-analytics/data-lake-analytics-u-sql-cognitive)
+Now we will look at creating a query which uses the Text Analytics Cognitive Extension available in Azure Data Lake Analytics. For more information on [Cognitive Extensions see the documentation](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-u-sql-cognitive?WT.mc_id=aiml-0000-amynic)
 
 First close all the blades you have open until you are at the Azure Data Lake Analytics service main page.
 
@@ -327,7 +327,7 @@ Review the output of the query:
 
 In this part of the lab you have walked through sample scripts and learnt about the Azure Portal for submitting and reviewing scripts, used our own data to query and added cognitive capabilities.
 
-For further information on Azure Data Lake Analytics see [the documentation](https://docs.microsoft.com/en-us/azure/data-lake-analytics/data-lake-analytics-overview)
+For further information on Azure Data Lake Analytics see [the documentation](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-overview?WT.mc_id=aiml-0000-amynic)
 
 For further code samples see the [Azure/usql github repo](https://github.com/Azure/usql)
 
@@ -422,11 +422,11 @@ or **azureml_lab/AzureMachineLearningLab.pdf**
 
 # Microsoft Cognitive Services
 
-For more information on these services: [https://azure.microsoft.com/en-gb/services/cognitive-services/](https://azure.microsoft.com/en-gb/services/cognitive-services/)
+For more information on these services: [https://azure.microsoft.com/services/cognitive-services/?WT.mc_id=aiml-0000-amynic](https://azure.microsoft.com/services/cognitive-services/?WT.mc_id=aiml-0000-amynic)
 
 ## Text Analytics Sample
 
-Go to [https://azure.microsoft.com/en-gb/try/cognitive-services/](https://azure.microsoft.com/en-gb/try/cognitive-services/) to obtain a free API key. Choose the **'Language'** tab and then **'Text Analytics API'** and create
+Go to [https://azure.microsoft.com/try/cognitive-services/?WT.mc_id=aiml-0000-amynic](https://azure.microsoft.com/try/cognitive-services/?WT.mc_id=aiml-0000-amynic) to obtain a free API key. Choose the **'Language'** tab and then **'Text Analytics API'** and create
 
 ![TextAPI](images/textapi.JPG)
 
@@ -437,13 +437,13 @@ Agree to the terms and conditions and then sign in using a preferred account
 
 Then you should be assigned an API key for Text Analytics free for 30 days. Take note of the **Endpoint and Key 1, Key 2** values, you will need them shortly.
 
-Next you can either use the in-browser testing API console here: [https://westus.dev.cognitive.microsoft.com/docs/services/TextAnalytics.V2.0/operations/56f30ceeeda5650db055a3c7/console](https://westus.dev.cognitive.microsoft.com/docs/services/TextAnalytics.V2.0/operations/56f30ceeeda5650db055a3c7/console)
+Next you can either use the in-browser testing API console here: [https://westus.dev.cognitive.microsoft.com/docs/services/TextAnalytics.V2.0/operations/56f30ceeeda5650db055a3c7/console?WT.mc_id=aiml-0000-amynic](https://westus.dev.cognitive.microsoft.com/docs/services/TextAnalytics.V2.0/operations/56f30ceeeda5650db055a3c7/console?WT.mc_id=aiml-0000-amynic)
 
 Or use an app such as [Postman](https://www.getpostman.com/) or [Fiddler](http://www.telerik.com/fiddler/fiddlercore).
 
 Now follow **'Task 2'** in the documentation getting started guide to detect sentiment, key phrases and language in a piece of text.
 
-[Task 2 Instructions here](https://docs.microsoft.com/en-gb/azure/cognitive-services/text-analytics/quick-start#task-2---detect-sentiment-key-phrases-and-languages)
+[Task 2 Instructions here](https://docs.microsoft.com/azure/cognitive-services/text-analytics/quick-start?WT.mc_id=aiml-0000-amynic#task-2---detect-sentiment-key-phrases-and-languages)
 
 For example using Postman, the requests look like below:
 
@@ -452,15 +452,15 @@ For example using Postman, the requests look like below:
 
 Responses returned for each of the API calls:
 
-**POST https://westus.api.cognitive.microsoft.com/text/analytics/v2.0/sentiment**
+**POST https://westus.api.cognitive.microsoft.com/text/analytics/v2.0/sentiment?WT.mc_id=aiml-0000-amynic**
 
 ![TextAPI](images/sentimentresult.JPG)
 
-**POST https://westus.api.cognitive.microsoft.com/text/analytics/v2.0/keyphrases**
+**POST https://westus.api.cognitive.microsoft.com/text/analytics/v2.0/keyphrases?WT.mc_id=aiml-0000-amynic**
 
 ![TextAPI](images/keyphrasesresult.JPG)
 
-**POST https://westus.api.cognitive.microsoft.com/text/analytics/v2.0/languages**
+**POST https://westus.api.cognitive.microsoft.com/text/analytics/v2.0/languages?WT.mc_id=aiml-0000-amynic**
 
 ![TextAPI](images/languagesresult.JPG)
 
@@ -468,7 +468,7 @@ Responses returned for each of the API calls:
 
 If you want to try out the Computer Vision sample - try out the Analysing Image capability with a C# sample application in your DSVM
 
-[https://docs.microsoft.com/en-us/azure/cognitive-services/computer-vision/quickstarts/csharp#AnalyzeImage](https://docs.microsoft.com/en-us/azure/cognitive-services/computer-vision/quickstarts/csharp#AnalyzeImage)
+[https://docs.microsoft.com/azure/cognitive-services/computer-vision/quickstarts/csharp?WT.mc_id=aiml-0000-amynic#AnalyzeImage](https://docs.microsoft.com/azure/cognitive-services/computer-vision/quickstarts/csharp?WT.mc_id=aiml-0000-amynic#AnalyzeImage)
 
 In the same place you got your Text Analytics API key you can scroll to the bottom and **'Add'** the Computer Vision API key as well
 
@@ -493,7 +493,7 @@ In this lab we will look at the **Loan Credit Risk with SQL Server and R**: [htt
 
 ![Solution Template](images/loancreditrisk.JPG)
 
-7. Now to setup some details for the deployment within the [Data Science Virtual Machine (DSVM)](https://docs.microsoft.com/en-us/azure/machine-learning/machine-learning-data-science-virtual-machine-overview)
+7. Now to setup some details for the deployment within the [Data Science Virtual Machine (DSVM)](https://docs.microsoft.com/azure/machine-learning/machine-learning-data-science-virtual-machine-overview?WT.mc_id=aiml-0000-amynic)
 8. Enter a deployment name, for example **'rsample'**, choose a subscription, a location for the deployment of resources for example **'East US'** and provide a short description 
 
 *Note: you may need to accept some license agreements for the solution to deploy in your subscription, enable for the subscription and then continue*
@@ -553,11 +553,11 @@ However in the azure portal you can remove the Machine Learning Workspace
 
 The Azure machine learning workbench team have put together a great step by step tutorial for you to explore the new workbench tool and see how this could support your machine learning projects in production
 
-Follow the step-step below from installation to deployment. Also keep exploring the documentation for more features and examples [here](https://docs.microsoft.com/en-us/azure/machine-learning/preview/)
+Follow the step-step below from installation to deployment. Also keep exploring the documentation for more features and examples [here](https://docs.microsoft.com/azure/machine-learning/preview/?WT.mc_id=aiml-0000-amynic)
 
-1)	Install and Create workspaces: [https://docs.microsoft.com/en-us/azure/machine-learning/preview/quickstart-installation](https://docs.microsoft.com/en-us/azure/machine-learning/preview/quickstart-installation)
-2)	TUTORIAL: Prepare data: [https://docs.microsoft.com/en-us/azure/machine-learning/preview/tutorial-classifying-iris-part-1 ](https://docs.microsoft.com/en-us/azure/machine-learning/preview/tutorial-classifying-iris-part-1)
-3)	TUTORIAL: Build a model: [https://docs.microsoft.com/en-us/azure/machine-learning/preview/tutorial-classifying-iris-part-2](https://docs.microsoft.com/en-us/azure/machine-learning/preview/tutorial-classifying-iris-part-2 )
-4)	TUTORIAL: Deploy a model: [https://docs.microsoft.com/en-us/azure/machine-learning/preview/tutorial-classifying-iris-part-3](https://docs.microsoft.com/en-us/azure/machine-learning/preview/tutorial-classifying-iris-part-3 )
+1)	Install and Create workspaces: [https://docs.microsoft.com/azure/machine-learning/preview/quickstart-installation?WT.mc_id=aiml-0000-amynic](https://docs.microsoft.com/azure/machine-learning/preview/quickstart-installation?WT.mc_id=aiml-0000-amynic)
+2)	TUTORIAL: Prepare data: [https://docs.microsoft.com/azure/machine-learning/preview/tutorial-classifying-iris-part-1?WT.mc_id=aiml-0000-amynic ](https://docs.microsoft.com/azure/machine-learning/preview/tutorial-classifying-iris-part-1?WT.mc_id=aiml-0000-amynic)
+3)	TUTORIAL: Build a model: [https://docs.microsoft.com/azure/machine-learning/preview/tutorial-classifying-iris-part-2?WT.mc_id=aiml-0000-amynic](https://docs.microsoft.com/azure/machine-learning/preview/tutorial-classifying-iris-part-2?WT.mc_id=aiml-0000-amynic )
+4)	TUTORIAL: Deploy a model: [https://docs.microsoft.com/azure/machine-learning/preview/tutorial-classifying-iris-part-3?WT.mc_id=aiml-0000-amynic](https://docs.microsoft.com/azure/machine-learning/preview/tutorial-classifying-iris-part-3?WT.mc_id=aiml-0000-amynic )
 
 ![Azure Machine Learning Workbench](images/mlworkbench.JPG)
